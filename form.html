@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<h1>Form</h1> 
+
+		<form name="contatto" actions=""> <!-- casella da riempire/per iscriversi -->
+			<label for="nome">Nome</label> <!-- etichetta che vede l'utente -->
+			<input id="nome" type="text" name="nome" placeholder="inserisci il tuo nome" maxlength="10" required>
+
+			<br><br>
+
+			<label for="cognome">Cognome</label>
+			<input id="cognome" type="text" name="cognome" placeholder="inserisci il tuo cognome">
+
+			<br><br>
+
+			<label for="email">Email</label>
+			<input id="email" type="email" name="email" name="email" placeholder="inserisci la tua email">
+
+			<br><br>
+
+			<label for="tel">Telefono</label>
+			<input id="tel" type="tel" name="tel" placeholder="inserisci il tuo telefono">
+
+			<br><br>
+
+			<label for="età">Età</label>
+			<input id="età" type="number" name="number" min="10" max="100" step="5">
+			
+			<br><br>
+
+			<label for="cv">Carica il cv</label>
+			<input id="cv" type="file">
+
+			<br><br>
+
+			<label for="password">Password</label>
+			<input id="password" type="password">
+
+			<br><br>
+
+			<label>Sesso</label>
+			<input type="radio" name="sesso" value="m">M   <!-- "name" uguale per tutti poter selezionare solo 1 tra le 3 opzioni -->
+			<input type="radio" name="sesso" value="f">F
+			<input type="radio" name="sesso" value="altro">Altro
+
+			<br><br>
+
+			<label>Come ci hai conosciuto</label>
+			<input type="checkbox" name="TV" value="m">TV 
+			<input type="checkbox" name="ADV" value="f">ADV
+			<input type="checkbox" name="Altro" value="altro">Altro
+
+			<label for="prov">Prov</label>
+			<select id="prov">
+				<option value="RM">RM</option>
+				<option value="MI">MI</option>
+			</select>
+
+			<label for="msg">MSG</label>
+			<textarea id="msg" name="msg" placeholder="lascia un messaggio"></textarea>
+
+			<br><br>
+
+			<input type="hidden" name="testhidden" value=""> <!-- nascosto all'utente, serve al proprietario del sito -->
+
+			<input type="submit" value="invia"> <!-- tasto invio -->
+
+
+
+		</form>	
+
+
+
+
+</body>
+</html>
